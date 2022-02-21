@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ItemsContainer from './ItemsContainer'
 
 class ListItems extends Component {
   constructor(props){
@@ -31,6 +32,8 @@ class ListItems extends Component {
           <input type="text" value={this.state.item} onChange={this.handleInput} placeholder='enter text here!'/>
           <button type='submit' onClick={this.onFormSubmit}>Add</button>
         </form>
+
+        <ItemsContainer />
       </div>
     );
   }
